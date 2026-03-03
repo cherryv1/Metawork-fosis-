@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: metawork-fosis
+    env: static
+    staticPublishPath: ./public
+    routes:
+      - path: /
+        destination: /index.html
