@@ -88,6 +88,11 @@ h1 {
     border: 2px solid rgba(0, 255, 0, 0.2);
     border-radius: 50%;
     animation: rotate 15s linear infinite;
+    pointer-events: none; /* Permitir que los clics pasen a través del contenedor de la órbita */
+}
+
+.orbit-button {
+    pointer-events: auto; /* Reactivar eventos para los botones */
 }
 
 @keyframes rotate {
@@ -230,6 +235,9 @@ h1 {
 .orbit-button svg {
     width: 30px;
     height: 30px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 2px rgba(0, 255, 0, 0.5));
 }
 
 .orbit-button span {
